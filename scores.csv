@@ -1,0 +1,65 @@
+,Model Name,Selected Features,Parameters,Train Time,Test Time,Train Accuracy,Test Accuracy,F1,Precision,Recall
+0,RandomForest + No Sampler + k=10 + isotonic,"['NG' 'NM' 'NPA' 'NPM' 'TNG' 'TNLG' 'TNM' 'TNPM' 'Java Logging Rules'
+ 'Number of Bugs']","{'n_estimators': 169, 'max_depth': 6, 'min_samples_split': 4, 'min_samples_leaf': 1, 'max_features': 0.9175596702265739}",0.7803122997283936,0.027851581573486328,0.9975186104218362,0.8,0.7333333333333333,0.7,0.7
+1,AdaBoost + No Sampler + k=10 + isotonic,"['NG' 'NM' 'NPA' 'NPM' 'TNG' 'TNLG' 'TNM' 'TNPM' 'Java Logging Rules'
+ 'Number of Bugs']","{'n_estimators': 142, 'learning_rate': 0.016625859056622703}",0.8250510692596436,0.06192374229431152,0.9975186104218362,0.8,0.7333333333333333,0.7,0.7
+2,GradientBoosting + No Sampler + k=10 + isotonic,"['NG' 'NM' 'NPA' 'NPM' 'TNG' 'TNLG' 'TNM' 'TNPM' 'Java Logging Rules'
+ 'Number of Bugs']","{'n_estimators': 146, 'learning_rate': 0.1291919006019896, 'max_depth': 8, 'min_samples_split': 2, 'min_samples_leaf': 2, 'subsample': 0.9108031778498394}",2.2472596168518066,0.004580974578857422,0.9975186104218362,0.8,0.7333333333333333,0.7,0.7
+3,DecisionTree + No Sampler + k=10 + isotonic,"['NG' 'NM' 'NPA' 'NPM' 'TNG' 'TNLG' 'TNM' 'TNPM' 'Java Logging Rules'
+ 'Number of Bugs']","{'max_depth': 6, 'min_samples_split': 10, 'min_samples_leaf': 2, 'max_features': 0.7160447946116418}",0.01597309112548828,0.0025873184204101562,0.9975186104218362,0.8,0.7333333333333333,0.7,0.7
+4,ExtraTrees + No Sampler + k=10 + isotonic,"['NG' 'NM' 'NPA' 'NPM' 'TNG' 'TNLG' 'TNM' 'TNPM' 'Java Logging Rules'
+ 'Number of Bugs']",{},0.308197021484375,0.018119096755981445,1.0,1.0,1.0,1.0,1.0
+5,LogisticRegression + No Sampler + k=10 + isotonic,"['NG' 'NM' 'NPA' 'NPM' 'TNG' 'TNLG' 'TNM' 'TNPM' 'Java Logging Rules'
+ 'Number of Bugs']",{},0.07956075668334961,0.002418994903564453,0.9950372208436724,0.8,0.7333333333333333,0.7,0.7
+6,SGD + No Sampler + k=17 + isotonic,"['NLE' 'NOC' 'NOD' 'NG' 'NLA' 'NLG' 'NM' 'NPA' 'NPM' 'TLLOC' 'TLOC' 'TNG'
+ 'TNLG' 'TNM' 'TNPM' 'Java Logging Rules' 'Number of Bugs']","{'alpha': 0.00015109360284145355, 'loss': 'log_loss', 'penalty': 'l1'}",0.04522967338562012,0.0028352737426757812,0.9640198511166254,0.6,0.49333333333333335,0.4333333333333333,0.4333333333333333
+7,XGB + No Sampler + k=10 + isotonic,"['NG' 'NM' 'NPA' 'NPM' 'TNG' 'TNLG' 'TNM' 'TNPM' 'Java Logging Rules'
+ 'Number of Bugs']","{'max_depth': 6, 'learning_rate': 0.03854741418776388, 'subsample': 0.6349360695988674, 'colsample_bytree': 0.9858516432495953, 'reg_alpha': 0.07622589615152425, 'reg_lambda': 0.00023268164948742664, 'min_child_weight': 0.0005197053664941406}",0.2852656841278076,0.005112886428833008,0.9975186104218362,0.8,0.7333333333333333,0.7,0.7
+8,LGBM + No Sampler + k=10 + isotonic,"['NG' 'NM' 'NPA' 'NPM' 'TNG' 'TNLG' 'TNM' 'TNPM' 'Java Logging Rules'
+ 'Number of Bugs']","{'num_leaves': 204, 'learning_rate': 0.18502967981212876, 'max_depth': 13, 'min_child_samples': 1, 'subsample': 0.7045336759978386, 'colsample_bytree': 0.8096064637766343, 'reg_alpha': 0.05793894063682194, 'reg_lambda': 3.73673473928825e-05}",0.10275721549987793,0.004265308380126953,1.0,1.0,1.0,1.0,1.0
+9,CatBoost + No Sampler + k=10 + isotonic,"['NG' 'NM' 'NPA' 'NPM' 'TNG' 'TNLG' 'TNM' 'TNPM' 'Java Logging Rules'
+ 'Number of Bugs']",{},7.656140327453613,0.004494428634643555,1.0,1.0,1.0,1.0,1.0
+10,MLP + No Sampler + k=65 + isotonic,"['LDC' 'LLDC' 'LCOM5' 'NL' 'NLE' 'WMC' 'CBO' 'CBOI' 'NII' 'NOI' 'RFC' 'AD'
+ 'CD' 'CLOC' 'DLOC' 'PDA' 'PUA' 'TCD' 'TCLOC' 'DIT' 'NOA' 'NOC' 'NOD'
+ 'NOP' 'LLOC' 'LOC' 'NA' 'NG' 'NLA' 'NLG' 'NLM' 'NLPA' 'NLPM' 'NM' 'NOS'
+ 'NPA' 'NPM' 'TLLOC' 'TLOC' 'TNG' 'TNLA' 'TNLG' 'TNLM' 'TNLPM' 'TNLS'
+ 'TNM' 'TNOS' 'TNPA' 'TNPM' 'TNS' 'WarningCritical' 'WarningMajor'
+ 'WarningMinor' 'Basic Rules' 'Brace Rules' 'Clone Implementation Rules'
+ 'Controversial Rules' 'Design Rules' 'Empty Code Rules' 'Finalizer Rules'
+ 'Import Statement Rules' 'JUnit Rules' 'Java Logging Rules'
+ 'Naming Rules' 'Number of Bugs']","{'activation': 'tanh', 'solver': 'lbfgs', 'alpha': 0.001288728588820617}",2.677121877670288,0.004210472106933594,0.9950372208436724,0.8,0.72,0.6666666666666666,0.6666666666666666
+11,GaussianNB + No Sampler + k=10 + isotonic,"['NG' 'NM' 'NPA' 'NPM' 'TNG' 'TNLG' 'TNM' 'TNPM' 'Java Logging Rules'
+ 'Number of Bugs']",{},0.016892671585083008,0.0030999183654785156,1.0,1.0,1.0,1.0,1.0
+12,SVC + No Sampler + k=10 + isotonic,"['NG' 'NM' 'NPA' 'NPM' 'TNG' 'TNLG' 'TNM' 'TNPM' 'Java Logging Rules'
+ 'Number of Bugs']","{'kernel': 'rbf', 'C': 46.96592174141384, 'gamma': 0.1444504358959717}",0.05016016960144043,0.0039904117584228516,0.9975186104218362,0.8,0.7333333333333333,0.7,0.7
+13,KNeighbors + No Sampler + k=10 + isotonic,"['NG' 'NM' 'NPA' 'NPM' 'TNG' 'TNLG' 'TNM' 'TNPM' 'Java Logging Rules'
+ 'Number of Bugs']","{'n_neighbors': 23, 'metric': 'manhattan', 'weights': 'distance'}",0.023455142974853516,0.004746198654174805,0.9975186104218362,0.8,0.7333333333333333,0.7,0.7
+14,RandomForest + RandomOverSampler + k=10 + isotonic,"['NG' 'NLG' 'NPM' 'TNG' 'TNLG' 'TNLPM' 'TNPM' 'Import Statement Rules'
+ 'Java Logging Rules' 'Number of Bugs']","{'n_estimators': 94, 'max_depth': 9, 'min_samples_split': 8, 'min_samples_leaf': 2, 'max_features': 0.6497433637439948}",0.5521166324615479,0.017129182815551758,1.0,1.0,1.0,1.0,1.0
+15,AdaBoost + RandomOverSampler + k=10 + isotonic,"['NG' 'NLG' 'NPM' 'TNG' 'TNLG' 'TNLPM' 'TNPM' 'Import Statement Rules'
+ 'Java Logging Rules' 'Number of Bugs']","{'n_estimators': 105, 'learning_rate': 0.09419752955148966}",0.7557952404022217,0.04651045799255371,1.0,1.0,1.0,1.0,1.0
+16,GradientBoosting + RandomOverSampler + k=10 + isotonic,"['NG' 'NLG' 'NPM' 'TNG' 'TNLG' 'TNLPM' 'TNPM' 'Import Statement Rules'
+ 'Java Logging Rules' 'Number of Bugs']","{'n_estimators': 197, 'learning_rate': 0.47364622397829537, 'max_depth': 7, 'min_samples_split': 8, 'min_samples_leaf': 4, 'subsample': 0.9687983179128475}",2.8066864013671875,0.004622220993041992,1.0,1.0,1.0,1.0,1.0
+17,DecisionTree + RandomOverSampler + k=10 + isotonic,"['NG' 'NLG' 'NPM' 'TNG' 'TNLG' 'TNLPM' 'TNPM' 'Import Statement Rules'
+ 'Java Logging Rules' 'Number of Bugs']","{'max_depth': 10, 'min_samples_split': 10, 'min_samples_leaf': 2, 'max_features': 0.8057679390213975}",0.017844438552856445,0.0025730133056640625,1.0,1.0,1.0,1.0,1.0
+18,ExtraTrees + RandomOverSampler + k=10 + isotonic,"['NG' 'NLG' 'NPM' 'TNG' 'TNLG' 'TNLPM' 'TNPM' 'Import Statement Rules'
+ 'Java Logging Rules' 'Number of Bugs']",{},0.37413501739501953,0.01788163185119629,1.0,1.0,1.0,1.0,1.0
+19,LogisticRegression + RandomOverSampler + k=10 + isotonic,"['NG' 'NLG' 'NPM' 'TNG' 'TNLG' 'TNLPM' 'TNPM' 'Import Statement Rules'
+ 'Java Logging Rules' 'Number of Bugs']",{},0.1361083984375,0.002440929412841797,0.9986206896551724,1.0,1.0,1.0,1.0
+20,SGD + RandomOverSampler + k=17 + isotonic,"['CBO' 'NOI' 'LLOC' 'NG' 'NLA' 'NLG' 'NM' 'NPM' 'TNG' 'TNLG' 'TNLM'
+ 'TNLPM' 'TNM' 'TNPM' 'Import Statement Rules' 'Java Logging Rules'
+ 'Number of Bugs']","{'alpha': 0.09436633643991614, 'loss': 'modified_huber', 'penalty': 'l1'}",0.19974088668823242,0.0024175643920898438,0.9793103448275862,0.9,0.8933333333333333,0.9333333333333332,0.9333333333333332
+21,XGB + RandomOverSampler + k=10 + isotonic,"['NG' 'NLG' 'NPM' 'TNG' 'TNLG' 'TNLPM' 'TNPM' 'Import Statement Rules'
+ 'Java Logging Rules' 'Number of Bugs']","{'max_depth': 15, 'learning_rate': 0.0551915211343645, 'subsample': 0.729119911395973, 'colsample_bytree': 0.7014863181257388, 'reg_alpha': 3.501368293215524e-05, 'reg_lambda': 0.39650853701486793, 'min_child_weight': 4.050436948473986}",0.4160912036895752,0.005408525466918945,1.0,1.0,1.0,1.0,1.0
+22,LGBM + RandomOverSampler + k=10 + isotonic,"['NG' 'NLG' 'NPM' 'TNG' 'TNLG' 'TNLPM' 'TNPM' 'Import Statement Rules'
+ 'Java Logging Rules' 'Number of Bugs']","{'num_leaves': 245, 'learning_rate': 0.03714769612841036, 'max_depth': 4, 'min_child_samples': 46, 'subsample': 0.9593565390179357, 'colsample_bytree': 0.6608959788502944, 'reg_alpha': 0.0010626760727055367, 'reg_lambda': 0.0031117489591253964}",0.1749742031097412,0.004548072814941406,1.0,1.0,1.0,1.0,1.0
+23,CatBoost + RandomOverSampler + k=10 + isotonic,"['NG' 'NLG' 'NPM' 'TNG' 'TNLG' 'TNLPM' 'TNPM' 'Import Statement Rules'
+ 'Java Logging Rules' 'Number of Bugs']",{},8.629770994186401,0.004525899887084961,1.0,1.0,1.0,1.0,1.0
+24,MLP + RandomOverSampler + k=10 + isotonic,"['NG' 'NLG' 'NPM' 'TNG' 'TNLG' 'TNLPM' 'TNPM' 'Import Statement Rules'
+ 'Java Logging Rules' 'Number of Bugs']","{'activation': 'logistic', 'solver': 'lbfgs', 'alpha': 0.07354378662740273}",3.63189435005188,0.004061222076416016,1.0,1.0,1.0,1.0,1.0
+25,GaussianNB + RandomOverSampler + k=10 + isotonic,"['NG' 'NLG' 'NPM' 'TNG' 'TNLG' 'TNLPM' 'TNPM' 'Import Statement Rules'
+ 'Java Logging Rules' 'Number of Bugs']",{},0.01827406883239746,0.003088235855102539,1.0,1.0,1.0,1.0,1.0
+26,SVC + RandomOverSampler + k=10 + isotonic,"['NG' 'NLG' 'NPM' 'TNG' 'TNLG' 'TNLPM' 'TNPM' 'Import Statement Rules'
+ 'Java Logging Rules' 'Number of Bugs']","{'kernel': 'rbf', 'C': 4.6510507169054645, 'gamma': 0.0011700736167225684}",0.30098962783813477,0.0052776336669921875,0.9995402298850574,1.0,1.0,1.0,1.0
+27,KNeighbors + RandomOverSampler + k=10 + isotonic,"['NG' 'NLG' 'NPM' 'TNG' 'TNLG' 'TNLPM' 'TNPM' 'Import Statement Rules'
+ 'Java Logging Rules' 'Number of Bugs']","{'n_neighbors': 23, 'metric': 'manhattan', 'weights': 'distance'}",0.03923749923706055,0.004785299301147461,1.0,0.9,0.8933333333333333,0.9333333333333332,0.9333333333333332
